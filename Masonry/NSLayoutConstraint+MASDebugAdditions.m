@@ -43,7 +43,8 @@
             @(NSLayoutAttributeCenterX)  : @"centerX",
             @(NSLayoutAttributeCenterY)  : @"centerY",
             @(NSLayoutAttributeBaseline) : @"baseline",
-            
+            @(NSLayoutAttributeFirstBaseline) : @"firstBaseline",
+
 #if TARGET_OS_IPHONE
             @(NSLayoutAttributeLeftMargin)           : @"leftMargin",
             @(NSLayoutAttributeRightMargin)          : @"rightMargin",

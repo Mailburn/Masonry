@@ -77,7 +77,7 @@
 - (MASConstraint *)addConstraintWithAttributes:(MASAttribute)attrs {
     __unused MASAttribute anyAttribute = (MASAttributeLeft | MASAttributeRight | MASAttributeTop | MASAttributeBottom | MASAttributeLeading
                                           | MASAttributeTrailing | MASAttributeWidth | MASAttributeHeight | MASAttributeCenterX
-                                          | MASAttributeCenterY | MASAttributeBaseline
+                                          | MASAttributeCenterY | MASAttributeBaseline | MASAttributeFirstBaseline
 #if TARGET_OS_IPHONE
                                           | MASAttributeLeftMargin | MASAttributeRightMargin | MASAttributeTopMargin | MASAttributeBottomMargin
                                           | MASAttributeLeadingMargin | MASAttributeTrailingMargin | MASAttributeCenterXWithinMargins
@@ -100,7 +100,8 @@
     if (attrs & MASAttributeCenterX) [attributes addObject:self.view.mas_centerX];
     if (attrs & MASAttributeCenterY) [attributes addObject:self.view.mas_centerY];
     if (attrs & MASAttributeBaseline) [attributes addObject:self.view.mas_baseline];
-    
+    if (attrs & MASAttributeFirstBaseline) [attributes addObject:self.view.mas_firstBaseline];
+
 #if TARGET_OS_IPHONE
     
     if (attrs & MASAttributeLeftMargin) [attributes addObject:self.view.mas_leftMargin];

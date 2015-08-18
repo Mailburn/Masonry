@@ -80,6 +80,10 @@
     return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeBaseline];
 }
 
+- (MASViewAttribute *)mas_firstBaseline {
+    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeFirstBaseline];
+}
+
 - (MASViewAttribute *(^)(NSLayoutAttribute))mas_attribute
 {
     return ^(NSLayoutAttribute attr) {

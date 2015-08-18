@@ -208,6 +208,10 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeBaseline];
 }
 
+- (MASConstraint *)firstBaseline {
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeFirstBaseline];
+}
+
 #if TARGET_OS_IPHONE
 
 - (MASConstraint *)leftMargin {

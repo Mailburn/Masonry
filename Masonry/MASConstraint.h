@@ -126,6 +126,7 @@
 - (MASConstraint *)centerX;
 - (MASConstraint *)centerY;
 - (MASConstraint *)baseline;
+- (MASConstraint *)firstBaseline;
 
 #if TARGET_OS_IPHONE
 

@@ -21,7 +21,8 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
     MASAttributeCenterX = 1 << NSLayoutAttributeCenterX,
     MASAttributeCenterY = 1 << NSLayoutAttributeCenterY,
     MASAttributeBaseline = 1 << NSLayoutAttributeBaseline,
-    
+    MASAttributeFirstBaseline = 1 << NSLayoutAttributeFirstBaseline,
+
 #if TARGET_OS_IPHONE
     
     MASAttributeLeftMargin = 1 << NSLayoutAttributeLeftMargin,
