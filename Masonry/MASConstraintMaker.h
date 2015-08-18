@@ -60,6 +60,7 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
 @property (nonatomic, strong, readonly) MASConstraint *centerX;
 @property (nonatomic, strong, readonly) MASConstraint *centerY;
 @property (nonatomic, strong, readonly) MASConstraint *baseline;
+@property (nonatomic, strong, readonly) MASConstraint *firstBaseline;
 
 #if TARGET_OS_IPHONE
 

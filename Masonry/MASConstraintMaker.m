@@ -177,6 +177,10 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeBaseline];
 }
 
+- (MASConstraint *)firstBaseline {
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeFirstBaseline];
+}
+
 - (MASConstraint *(^)(MASAttribute))attributes {
     return ^(MASAttribute attrs){
         return [self addConstraintWithAttributes:attrs];
